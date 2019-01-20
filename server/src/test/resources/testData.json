@@ -1,0 +1,46 @@
+{
+    "today": {
+        "description": "Fog. Chilly.",
+        "highTemperature": "36.50",
+        "lowTemperature": "30.20",
+        "state": "Kansas",
+        "city": "Lawrence"
+    },
+    "daily": [
+        {
+            "description": "Light snow late. Haze. Chilly.",
+            "highTemperature": "40.46",
+            "lowTemperature": "30.02"
+        },
+        {
+            "description": "Light snow early. Overcast. Cold.",
+            "highTemperature": "27.86",
+            "lowTemperature": "11.48"
+        },
+        {
+            "description": "a mixture of sun and clouds. Chilly.",
+            "highTemperature": "32.72",
+            "lowTemperature": "8.06"
+        },
+        {
+            "description": "a mixture of sun and clouds. Cool.",
+            "highTemperature": "49.46",
+            "lowTemperature": "27.32"
+        },
+        {
+            "description": "Light snow. Cloudy. Chilly.",
+            "highTemperature": "33.44",
+            "lowTemperature": "16.70"
+        },
+        {
+            "description": "Scattered clouds. Chilly.",
+            "highTemperature": "32.18",
+            "lowTemperature": "11.48"
+        },
+        {
+            "description": "Partly cloudy. Cold.",
+            "highTemperature": "28.40",
+            "lowTemperature": "15.80"
+        }
+    ]
+}

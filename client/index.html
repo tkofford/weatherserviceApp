@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!-- https://www.digitalocean.com/community/tutorials/how-to-use-vue-js-and-axios-to-display-data-from-an-api -->
+<html lang="en">
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation.min.css">
+  <meta charset="utf-8">
+  <title>Weather Service Application</title>
+</head>
+
+  <body>
+    <div class="container" id="app">
+      <div class="row">
+        <h3 class="text-center">Current Conditions</h3>
+        <div class="columns medium-4 medium-centered">
+          <div class="card">
+            <div class="card-section">
+              <p> Current Location: <input v-model="location" placeholder="current location" readonly></p>
+              <p>
+                <button class="button" @click="resetLocation">Reset Location</button>
+              </p>
+            </div>
+            <div class="card-divider">
+              <p>{{ today.description }}</p>
+            </div>
+            <div class="card-section">
+              <p>High Temperature: {{ today.highTemperature }}</p>
+            </div>
+            <div class="card-divider">
+              <p>Low Temperature: {{ today.lowTemperature }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <h3 class="text-center">3 Day Weather Forecast</h3>
+        <div class="columns medium-4" v-for="(day, index) in daily" v-if="index < 3">
+          <div class="card">
+            <div class="card-section">
+              <p>{{ day.weekday }}</p>
+            </div>
+            <div class="card-divider">
+              <p>{{ day.description }}</p>
+            </div>
+            <div class="card-section">
+              <p>High Temperature: {{ day.highTemperature }}</p>
+            </div>
+            <div class="card-divider">
+              <p>Low Temperature: {{ day.lowTemperature }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="vueApp.js"></script>
+  </body>
+</html>
