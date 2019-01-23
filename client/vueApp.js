@@ -5,14 +5,13 @@ const vm = new Vue({
         data: {
             today: {},
             daily: [],
-            location: ""
+            location: "Lawrence, Kansas"
         },
         mounted() {
           if (localStorage.location) {
             this.location = localStorage.location;
           }
           axios.get(url + this.location).then(response => {
-//          axios.get(`${'https://cors-anywhere.herokuapp.com/'}http://localhost:9000/api/weather`).then(response => {
             this.today = response.data.today;
             this.daily = response.data.daily;
             this.location = this.today.city + ", " + this.today.state;
