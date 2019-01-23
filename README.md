@@ -10,12 +10,12 @@ The web service gets data from a 3rd party weather API, by submitting a GET requ
 * Weather forecast, high & low temperatures for the next 3 days
 
 ## Logs:
-* The web service generates 2 logs in the <root>logs directory of where the service is running:
-** Application log - "weather-forecast_log.log". Typical application log.
-** Analytics/Audit log - "weather-forecast_audit.log". Contains date/time, IP Address, and location for each user request. This log can be used for analytical purposes, for example, to track how many users from a specific location requested weather on this service the past 7 days.
+The web service generates 2 logs in the <root>logs directory of where the service is running:
+* Application log - **weather-forecast_log.log**. Typical application log.
+* Analytics/Audit log - **weather-forecast_audit.log**. Contains date/time, IP Address, and location for each user request. This log can be used for analytical purposes, for example, to track how many users from a specific location requested weather on this service the past 7 days.
 
 ## Architecture/Languages:
-The web service is a spring-boot RESTful web service, and the landing page is a very minimal HTML page implementing Vue.js [https://vuejs.org/] as the JavaScript framework.
+The web service is a **spring-boot** RESTful web service, and the landing page is a very minimal HTML page implementing **Vue.js** [https://vuejs.org/] as the JavaScript framework.
 
 ## Requirements for running the application
 **_Web Service:_**
